@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>0</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <file>
+      <name>$PROJ_DIR$\ring_detection.c</name>
+      <outputs>
+        <name>$PROJ_DIR$\Debug\Obj\ring_detection.r43</name>
+      </outputs>
+      <inputs>
+        <name>$TOOLKIT_DIR$\INC\msp430x14x.h</name>
+        <name>$TOOLKIT_DIR$\INC\in430.h</name>
+        <name>$TOOLKIT_DIR$\INC\intrinsics.h</name>
+        <name>$PROJ_DIR$\v_21.h</name>
+        <name>$PROJ_DIR$\ring_detection.h</name>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Softmodem_Demo.d43</name>
+      <inputs>
+        <name>$TOOLKIT_DIR$\config\lnk430F149.xcl</name>
+        <name>$TOOLKIT_DIR$\config\multiplier.xcl</name>
+        <name>$TOOLKIT_DIR$\config\compactmath.xcl</name>
+        <name>$PROJ_DIR$\Debug\Obj\ring_detection.r43</name>
+        <name>$PROJ_DIR$\Debug\Obj\softmodem.r43</name>
+        <name>$PROJ_DIR$\Debug\Obj\v_21.r43</name>
+        <name>$TOOLKIT_DIR$\lib\cl430f.r43</name>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\softmodem.c</name>
+      <outputs>
+        <name>$PROJ_DIR$\Debug\Obj\softmodem.r43</name>
+      </outputs>
+      <inputs>
+        <name>$TOOLKIT_DIR$\INC\msp430x14x.h</name>
+        <name>$TOOLKIT_DIR$\INC\in430.h</name>
+        <name>$TOOLKIT_DIR$\INC\intrinsics.h</name>
+        <name>$PROJ_DIR$\softmodem.h</name>
+        <name>$PROJ_DIR$\v_21.h</name>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\v_21.c</name>
+      <outputs>
+        <name>$PROJ_DIR$\Debug\Obj\v_21.r43</name>
+      </outputs>
+      <inputs>
+        <name>$TOOLKIT_DIR$\INC\msp430x14x.h</name>
+        <name>$TOOLKIT_DIR$\INC\in430.h</name>
+        <name>$TOOLKIT_DIR$\INC\intrinsics.h</name>
+        <name>$PROJ_DIR$\v_21.h</name>
+        <name>$PROJ_DIR$\ring_detection.h</name>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+  </configuration>
+</project>
+
+
