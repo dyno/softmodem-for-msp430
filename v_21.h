@@ -84,8 +84,8 @@
 #define   NH_WAIT                  23                            //  23 * 1/300Hz =   76 ms
 #define   NH_ONES                  180                           // 180 * 1/300Hz =  600 ms
 #define   DetectTime_Chn1          152                           // defines time to detect binary ones (980 Hz)
-                                                                 // transmitted by the caller
-                                                                 // DetectTime_Chn1 * 1/980Hz ~ 155ms
+// transmitted by the caller
+// DetectTime_Chn1 * 1/980Hz ~ 155ms
 // delay routine constants
 #define   D_LOOPBODY               3                             // MSP430: 3 cycles for inner loop
 #define   D_LOOPCOUNT1ms           (unsigned int)((MCLK_DCO / (D_LOOPBODY*1000)))
@@ -94,12 +94,12 @@
 #define   F_CENTER_CHN2            1750                          // center frequency for channel 2
 #define   F_ANSWER                 2100                          // answer tone frequency
 #define   F_DELTA                  100                           // delta for mark and space frequencies
-  
+
 #define   F_CENTER_CHN1_SPACE      (F_CENTER_CHN1 + F_DELTA)     // channel 1 SPACE frequency (0) 1180 Hz
 #define   F_CENTER_CHN1_MARK       (F_CENTER_CHN1 - F_DELTA)     // channel 1 MARK  frequency (1)  980 Hz
 #define   F_CENTER_CHN2_SPACE      (F_CENTER_CHN2 + F_DELTA)     // channel 2 SPACE frequency (0) 1850 Hz
 #define   F_CENTER_CHN2_MARK       (F_CENTER_CHN2 - F_DELTA)     // channel 2 MARK  frequency (1) 1650 Hz
-  
+
 #define   RX_FREQ_CHN1_SPACE       (unsigned int)(TA_CLK / F_CENTER_CHN1_SPACE) // theoretical period value for 1180 Hz
 #define   RX_FREQ_CHN1_MARK        (unsigned int)(TA_CLK / F_CENTER_CHN1_MARK)  // theoretical period value for  980 Hz
 #define   CHN1_MARGIN              (unsigned int)((RX_FREQ_CHN1_MARK - RX_FREQ_CHN1_SPACE)/2) // tolerance window
